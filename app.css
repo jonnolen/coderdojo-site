@@ -1,0 +1,20 @@
+body {
+  background-image: url(http://subtlepatterns.com/patterns/ricepaper_v3.png);
+  background-position: initial initial;
+  background-repeat: initial initial;
+}
+
+.examples li {
+  font-size: 20px;
+  border: 2px solid black;
+  background-color: lightgrey;
+  height: 170px;
+}
+
+img.legacy-center {
+  display: block;
+}
+
+.register {
+  margin-top: 25px;
+}
