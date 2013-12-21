@@ -28,8 +28,11 @@ img.legacy-center {
 }
 
 .faq-question {
-  
+	font-size: 25px;
+	font-family: serif;
+	font-weight: bold;
 }
 .faq-answer {
-  
+	font-size: 22px;
+	font-family: sans-serif;
 }
