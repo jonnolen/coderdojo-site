@@ -2,6 +2,14 @@
   <head>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="app.css"/>
+	<script src="snowstorm.js"></script>
+	<script>
+	  snowStorm.snowColor = "#0f0";
+	  snowStorm.followMouse = false
+	  setInterval(function(){
+	    snowStorm.randomizeWind();
+	  }, 5000);
+	</script>
   </head>
   <body>
     <header class="navbar navbar-inverse" role="banner">
@@ -22,14 +30,13 @@
       </div>
     </header>
     <div class="container">
-      
-
       <h2>Where?</h2>
       <h3>Chase Legacy Center (at Arsenal Tech)</h3>
       <img src="http://jhbcc.org/wp-content/uploads/2011/03/LegacyPhoto.jpg" class="legacy-center"></img>
-      <a href="https://www.google.com/maps/preview#!q=Chase+Near+Eastside+Legacy+Center%2C+Indianapolis%2C+IN+46201&data=!4m38!2m15!1m14!1s0x886b505929d4126b%3A0x7c4976cbf020068!3m8!1m3!1d3374!2d-86.1319288!3d39.7786829!3m2!1i1221!2i845!4f13.1!4m2!3d39.7786133!4d-86.131845!6b1!5m21!3m20!1m4!3m2!3d39.7788355!4d-86.1318376!6e2!1m5!1sChase+Near+Eastside+Legacy+Center%2C+Indianapolis%2C+IN+46201!2s0x886b505929d4126b%3A0x7c4976cbf020068!3m2!3d39.7786133!4d-86.131845!3m8!1m3!1d3374!2d-86.1319288!3d39.7786829!3m2!1i1221!2i845!4f13.1"><h4>Google Map</h4></a>
-
-      <a href="http://zen.coderdojo.com/dojo/38" class="btn btn-primary btn-lg register">Come join us!</a>
+	  <div class="map">
+		<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=727+N.+Oriental+St.+Indianapolis,+IN+46202&amp;aq=&amp;sll=39.766555,-86.441277&amp;sspn=6.205573,13.392334&amp;ie=UTF8&amp;hq=&amp;hnear=727+N+Oriental+St,+Indianapolis,+Indiana+46202&amp;t=m&amp;ll=39.77378,-86.126118&amp;spn=0.023089,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=727+N.+Oriental+St.+Indianapolis,+IN+46202&amp;aq=&amp;sll=39.766555,-86.441277&amp;sspn=6.205573,13.392334&amp;ie=UTF8&amp;hq=&amp;hnear=727+N+Oriental+St,+Indianapolis,+Indiana+46202&amp;t=m&amp;ll=39.77378,-86.126118&amp;spn=0.023089,0.036478&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+      </div>
+	  <a href="http://zen.coderdojo.com/dojo/38" class="btn btn-primary btn-lg register">Come join us!</a>
     
     </div>
   </body>
