@@ -3,6 +3,7 @@ body {
   background-position: initial initial;
   background-repeat: initial initial;
 }
+/* Empty rule. :( */
 nav{
 }
 
@@ -35,4 +36,9 @@ img.legacy-center {
 .faq-answer {
 	font-size: 18px;
 	font-family: sans-serif;
+}
+#faq-wrapper {
+	border: 1px dashed black;
+	padding: 5px;
+	margin: 5px;
 }
