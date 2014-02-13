@@ -59,10 +59,11 @@ img.legacy-center {
 	border: 1px solid black;
 	padding: 10px;
 	font-size: 24px;
+	width:300px;
 }
 .view-count {
 	background-color: #000000;
 	color: #ffffff;
 	font-family: monospace;
-	width: initial;
+	display: inline-block;
 }
