@@ -4,7 +4,15 @@
 		<title>Khan Academy Programs and Scratch Projects by CoderDojo students</title>
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="app.css"/>
-		<!-- <script src=" -->
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+			function hideGame(id) {
+				$("#"+id).slideUp();
+			};
+			function showGame(id) {
+				$("#"+id).slideDown();
+			};
+		</script>
 	</head>
 	<body>
 		<header class="navbar navbar-inverse" role="banner">
@@ -32,25 +40,33 @@
 				<h1>Khan Academy programs</h1>
 				<p> You can click "Save on Khan Academy" to go to the program's page, where you can edit it, save it, and show it to your friends! (If you have a Khan Academy account.) </p>
 				<!-- Paddle Ball game -->
+				<p>The code is on the left; the "canvas" or result is on the right.</p>
+				<h2><a href="http://www.khanacademy.org/cs/paddle-ball-game/6569987980394496">Paddle Ball Game</a></h2> 
+				<button onclick="showGame('paddle-ball-game');">Show</button> <button onclick="hideGame('paddle-ball-game');">Hide</button> <br/>
 				<div style="padding-left: 0px; margin: 5px; display: inline-block" id="paddle-ball-game">
-					<p>The code is on the left; the "canvas" or result is on the right.</p>
-					<h2><a href="http://www.khanacademy.org/cs/paddle-ball-game/6569987980394496">Paddle Ball Game</a></h2> 
+					
 					<script src="http://www.khanacademy.org/cs/paddle-ball-game/6569987980394496/embed.js?editor=yes&amp;buttons=yes&amp;author=no&amp;embed=yes"></script> <p>Made using: <a href="http://www.khanacademy.org/cs">Khan Academy Computer Science</a>.</p>
 					<a href="http://www.khanacademy.org/cs/programming/drawing-basics/p/intro-to-drawing" style="font-size: 16px;">Click for Intro to Drawing tutorial.</a>
 				</div>
 			</div>
 			<!--
-				Question: should I just use <a> instead of embedding?
+ $$$   $$$  $$$$   $$$  $$$$$  $$$  $   $   $$$$  $$$$   $$$   $$$  $$$$$  $$$  $$$$$  $$$  
+$     $   $ $   $ $   $   $   $   $ $   $   $   $ $   $ $   $   $   $     $   $   $   $     
+ $$$  $     $$$$  $$$$$   $   $     $$$$$   $$$$  $$$$  $   $   $   $$$   $       $    $$$  
+    $ $   $ $  $  $   $   $   $   $ $   $   $     $  $  $   $ $ $   $     $   $   $       $ 
+ $$$   $$$  $   $ $   $   $    $$$  $   $   $     $   $  $$$   $    $$$$$  $$$    $    $$$  
 			-->
 			<div id="scratch-projects" style="margin-left: 0px;">
 				<h1>Scratch Projects</h1>
 				<hr/>
 				<h2>Mario Game on Scratch</h2><br/>(Original game: <a href="http://scratch.mit.edu/projects/13013773">Click here</a>)<br/>
-				<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/13013773/?autostart=false" frameborder="0" allowfullscreen></iframe>
+				<button onclick="showGame('mario-scratch');">Show</button> <button onclick="hideGame('mario-scratch');">Hide</button> <br/>
+				<div id="mario-scratch"> <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/13013773/?autostart=false" frameborder="0" allowfullscreen></iframe> </div>
 				<hr/>
 				<h2>Infinity Cat on Scratch</h2><br/>
 				(Original game: <a href="http://scratch.mit.edu/projects/11359757">Click here</a>)<br/>
-				<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/11359757/?autostart=false" frameborder="0" allowfullscreen></iframe>
+				<button onclick="showGame('infinity-cat');">Show</button> <button onclick="hideGame('infinity-cat');">Hide</button> <br/>
+				<div id="infinity-cat"> <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/11359757/?autostart=false" frameborder="0" allowfullscreen></iframe> </div>
 			</div>
     	
 			<br/><br/>
