@@ -8,6 +8,10 @@ nav {
 	
 }
 
+.hidden {
+	display: none
+}
+
 @font-face {
 	font-family: Papyrus;
 	src: url(Papyrus.ttc);
