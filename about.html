@@ -1,8 +1,16 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="app.css"/>
-  </head>
+	<head>
+    	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="app.css"/>
+	    <script src="snowstorm.js"></script>
+	    <title>About</title>
+	    <script>
+	    	snowStorm.followMouse = false
+			setInterval(function(){
+				snowStorm.randomizeWind();
+			}, 5000);
+		</script>
+  	</head>
   <body>
     <header class="navbar navbar-inverse" role="banner">
       <div class="container">
