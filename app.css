@@ -11,7 +11,7 @@ nav {
 .hidden {
 	display: none
 }
-
+/* The font-face rule is cool, we should import new fonts */
 @font-face {
 	font-family: Papyrus;
 	src: url(Papyrus.ttc);
