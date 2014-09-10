@@ -71,3 +71,7 @@ img.legacy-center {
 	font-family: monospace;
 	display: inline-block;
 }
+
+.error-buddy {
+	background-image: url(error-buddy.png)
+}
