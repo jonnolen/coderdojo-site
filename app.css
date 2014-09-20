@@ -11,7 +11,7 @@ nav {
 .hidden {
 	display: none
 }
-
+/* The font-face rule is cool, we should import new fonts */
 @font-face {
 	font-family: Papyrus;
 	src: url(Papyrus.ttc);
@@ -62,7 +62,7 @@ img.legacy-center {
 	text-align: right;
 	border: 1px solid black;
 	padding: 10px;
-	font-size: 24px;
+	font-size: 20px;
 	width:300px;
 }
 .view-count {
@@ -70,4 +70,8 @@ img.legacy-center {
 	color: #ffffff;
 	font-family: monospace;
 	display: inline-block;
+}
+
+.error-buddy {
+	background-image: url(error-buddy.png)
 }

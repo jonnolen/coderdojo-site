@@ -36,6 +36,8 @@
 			</div>
 		</header>
 		<div id="outer-wrapper" style="margin-left: 50px;">
+			<h1 style="font-family: Papyrus">Programs</h1>
+			<p>This is a list of Khan Academy programs and Scratch projects made by CoderDojo students. To play one click the "show" button.</p>
 			<div id="khan-programs">
 				<h1>Khan Academy programs</h1>
 				<p> You can click "Save on Khan Academy" to go to the program's page, where you can edit it, save it, and show it to your friends! (If you have a Khan Academy account.) </p>
@@ -43,10 +45,17 @@
 				<p>The code is on the left; the "canvas" or result is on the right.</p>
 				<h2><a href="http://www.khanacademy.org/cs/paddle-ball-game/6569987980394496">Paddle Ball Game</a></h2> 
 				<button onclick="showGame('paddle-ball-game');">Show</button> <button onclick="hideGame('paddle-ball-game');">Hide</button> <br/>
-				<div style="padding-left: 0px; margin: 5px; display: inline-block" id="paddle-ball-game">
+				<div style="padding-left: 0px; margin: 5px; display: none" id="paddle-ball-game">
 					
-					<script src="http://www.khanacademy.org/cs/paddle-ball-game/6569987980394496/embed.js?editor=yes&amp;buttons=yes&amp;author=no&amp;embed=yes"></script> <p>Made using: <a href="http://www.khanacademy.org/cs">Khan Academy Computer Science</a>.</p>
+					<script src="http://www.khanacademy.org/cs/paddle-ball-game-look-in-the-code/6569987980394496/embed.js?editor=yes&amp;buttons=yes&amp;author=no&amp;embed=yes"></script> <p>Made using: <a href="http://www.khanacademy.org/cs">Khan Academy Computer Science</a>.</p> 
 					<a href="http://www.khanacademy.org/cs/programming/drawing-basics/p/intro-to-drawing" style="font-size: 16px;">Click for Intro to Drawing tutorial.</a>
+				</div>
+				
+				<h2><a href="http://www.khanacademy.org/cs/catch-the-apples-a-game-featuring-a-100x100-canvas/6237280611598336>width=100&amp;height=100">Catch the apples! A game featuring a 100x100 canvas</a></h2> 
+				<button onclick="showGame('tiny-apple-game');">Show</button> <button onclick="hideGame('tiny-apple-game');">Hide</button> <br/>
+				<div style="padding-left: 0px; margin: 5px; display: none" id="tiny-apple-game">
+					<script src="http://www.khanacademy.org/cs/catch-the-apples-a-game-featuring-a-100x100-canvas/6237280611598336/embed.js?editor=no&amp;buttons=yes&amp;author=no&amp;embed=yes&amp;width=100&amp;height=100"></script> <p>Made using: <a href="http://www.khanacademy.org/cs">Khan Academy Computer Science</a>.</p> 
+					Author's note: <i>I made this program for a contest. There were not very many rules so I decided to give myself one -- it had to be on a 100x100 canvas instead of the full 400x400 canvas. The restart button mey be messed up due to the change in screen size.</i>
 				</div>
 			</div>
 			<!--
@@ -58,19 +67,51 @@ $     $   $ $   $ $   $   $   $   $ $   $   $   $ $   $ $   $   $   $     $   $ 
 			-->
 			<div id="scratch-projects" style="margin-left: 0px;">
 				<h1>Scratch Projects</h1>
+				<p>You can go to the original project to favorite, post comments, and remix the project, but you need an account!</p>
 				<hr/>
+				<!-- Mario Game -->
 				<h2>Mario Game on Scratch</h2><br/>(Original game: <a href="http://scratch.mit.edu/projects/13013773">Click here</a>)<br/>
 				<button onclick="showGame('mario-scratch');">Show</button> <button onclick="hideGame('mario-scratch');">Hide</button> <br/>
-				<div id="mario-scratch"> <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/13013773/?autostart=false" frameborder="0" allowfullscreen></iframe> </div>
+				<div id="mario-scratch" style="display: none">
+					<p>Use arrow keys to move, the number on the left is lives. Jump on the enemies.</p>
+					<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/13013773/?autostart=false" frameborder="0" allowfullscreen></iframe>
+				</div>
 				<hr/>
+				<!-- Infinity Cat -->
 				<h2>Infinity Cat on Scratch</h2><br/>
 				(Original game: <a href="http://scratch.mit.edu/projects/11359757">Click here</a>)<br/>
 				<button onclick="showGame('infinity-cat');">Show</button> <button onclick="hideGame('infinity-cat');">Hide</button> <br/>
-				<div id="infinity-cat"> <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/11359757/?autostart=false" frameborder="0" allowfullscreen></iframe> </div>
+				<div id="infinity-cat" style="display: none">
+					<p><b>WEBCAM REQUIRED</b> Press play and swipe your hand at the cat! You may have to swipe multiple times for him to disappear. Press space to end game!</p>
+					<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/11359757/?autostart=false" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<!-- car race -->
+				<h2>Car Race 2 on Scratch</h2><br/>
+				(Original games: <a href="http://scratch.mit.edu/projects/11515091">Car Race 1</a> and <a href="http://scratch.mit.edu/projects/17650490/">Car Race 2</a>)<br/>
+				<button onclick="showGame('car-race');">Show</button> <button onclick="hideGame('car-race');">Hide</button> <br/>
+				<div id="car-race" style="display: none">
+					<p>Use arrow keys to drive the car through 5 laps. The white line is the finish, and the black line is a checkpoint (to prevent cheating). Touching grass slows you down.</p>
+					<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/17650490/?autostart=false" frameborder="0" allowfullscreen></iframe>
+				</div>
 			</div>
+			
+			
+			<div id="html-stuff">
+				<h1>HTML</h1>
+				<p> If you are learning HTML you can show your cool stuff. It has to fit inside of a 640x480 rectangle in order not to take up space. [Experimental] </p>
+				<p>Example:</p>
+				<div style="width: 100px;"></div>
+			</div>
+			
     	
 			<br/><br/>
-			<span style="font-size: 18px;">Want your creation here? Go to <a href="http://www.khanacademy.org/cs">Khan Academy</a> or <a href="http://scratch.mit.edu">Scratch</a> and make your own programs/projects!</span>
+			<span style="font-size: 18px;">Want your creation here? Go to <a href="http://www.khanacademy.org/cs">Khan Academy</a> or <a href="http://scratch.mit.edu">Scratch</a> and make your own programs/projects, or go to <a href="http://www.codecademy.com">Codecademy</a> to learn HTML! Remember to send them or show them at a dojo metting!<br/>
+			Need inspiration? Here's some challenges. Try to build the game or program:</span>
+			<ul>
+				<li>Create an "Escape the Room" game. In this game, you will need to click on objects to get out of the room. There can be more than one level too. <b>Difficulty: 5/10</b> </li>
+				<li>Create a program/project where you can click and a ball will come out of your mouse and will bounce forever (until you stop the program). For bonus points make them randomly colored. <b>Difficulty: 5.5/10 on Khan Academy, 4/10 on Scratch</b></li>
+				<li>Create a chess board with pieces that can be dragged. On Khan Academy, use the avatars and stuff from the getImage() picker. (Leaves make great pawns!) You don't have to code in legal moves and stuff. <b>Difficulty: 6.5/10 on Khan Academy, 5/10 on Scratch using "is draggable in player" settings</b></li>
+			</ul>
 		</div>
 		<br/><br/>
 	</body>
