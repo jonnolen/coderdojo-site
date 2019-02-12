@@ -1,14 +1,20 @@
-coderdojo-site
-==============
+CFI 2 Coder Dojo Site
+=====================
 
-coderdojoindy.org
+Hey you,
 
-Right now, there's just a couple of simple pages created by two of our dojo members that touch on what technologies we use, where we meet, and a link to the Eventbrite page.
+We want you to make this site your own. We want you to make experiments with web technologies, we want you to link
+to your scratch projects, your glitch projects, your github repos. We want you to make videos of other things you do
+and embed them here. The only thing we don't want you to do is mess with parents.html and how to get to it from them
+home page, because that is important for new dojo members.
 
-Next steps:
+Remember our rules:
 
-- [ ] link to zen for sign ups
-- [ ] showcase of recent work
-- [ ] general about info for parents, members, and volunteers
-- [ ] link to Google Group / other discussion board
-- [ ] Deploy it somewhere
+- Be cool.
+- Have Fun.
+- Ask three and then an adult.
+
+Thanks,
+
+Your Coder Dojo Adults.
+
