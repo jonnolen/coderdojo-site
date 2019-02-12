@@ -3,10 +3,22 @@ body {
   background-position: initial initial;
   background-repeat: initial initial;
 }
-nav{
+/* Empty rule. :( */
+nav {
+	
 }
 
-.navbar{
+.hidden {
+	display: none
+}
+/* The font-face rule is cool, we should import new fonts */
+@font-face {
+	font-family: Papyrus;
+	src: url(Papyrus.ttc);
+}
+
+.navbar {
+	
 }
 .examples li {
   font-size: 20px;
@@ -25,4 +37,41 @@ img.legacy-center {
 
 .register {
   margin-top: 25px;
+}
+
+.faq-question {
+	font-size: 20px;
+	font-family: serif;
+	font-weight: bold;
+	margin-top: 12px;
+}
+.faq-answer {
+	font-size: 18px;
+	font-family: sans-serif;
+}
+#faq-wrapper {
+	border: 1px dashed black;
+	padding: 5px;
+	margin: 5px;
+}
+
+.view-count-wrapper {
+	position: absolute;
+	right: 50px;
+	top: 100px;
+	text-align: right;
+	border: 1px solid black;
+	padding: 10px;
+	font-size: 20px;
+	width:300px;
+}
+.view-count {
+	background-color: #000000;
+	color: #ffffff;
+	font-family: monospace;
+	display: inline-block;
+}
+
+.error-buddy {
+	background-image: url(error-buddy.png)
 }
